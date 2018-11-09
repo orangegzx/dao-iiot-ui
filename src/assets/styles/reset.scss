@@ -1,0 +1,141 @@
+@charset "utf-8";
+html, body {
+  height: 100%;
+}
+html{
+  font-size: 14px;
+}
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'PingFangSC',
+  'helvetica neue',
+  'hiragino sans gb',
+  'arial',
+  'microsoft yahei ui',
+  'microsoft yahei',
+  'simsun',
+  'sans-serif' !important;
+}
+body,
+ul,
+ol,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+form,
+fieldset,
+legend,
+input,
+textarea,
+button,
+p,
+blockquote,
+th,
+td,
+pre {
+  margin: 0;
+  padding: 0;
+}
+
+table,
+td,
+tr,
+th {
+  font-size: 12px;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-size: inherit;
+  font-weight: normal;
+}
+
+img,
+object,
+input,
+textarea,
+button,
+select {
+  vertical-align: middle
+}
+
+article,
+aside,
+footer,
+header,
+section,
+nav,
+figure,
+figcaption,
+hgroup,
+details,
+menu {
+  display: block
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  outline: 0 none;
+  border: none;
+}
+
+html {
+  overflow-x: hidden;
+  height: 100%;
+  font-size: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: Arial, "Microsoft Yahei", "Helvetica Neue", Helvetica, sans-serif;
+  color: #333;
+  line-height: 1;
+  -webkit-text-size-adjust: none;
+}
+
+a {
+  color: gray;
+  text-decoration: none;
+}
+
+a:link {
+  color: #fafafa;
+}
+a:visited {
+  color:#191970;
+}
+
+a:hover {
+  color: #4169E1;
+}
+
+a:active {
+}
+
+
+
+

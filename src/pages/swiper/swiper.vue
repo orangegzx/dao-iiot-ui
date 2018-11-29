@@ -26,7 +26,7 @@
                         <a href="http://58.56.27.130:6705" target="_blank">IOT解决方案</a>
                       </el-menu-item>
                       <el-menu-item index="2">
-                        <a href="http://117.50.19.70:30639" target="_blank">ERP解决方案</a>
+                        <a href="http://117.50.19.70:31982" target="_blank">ERP解决方案</a>
                       </el-menu-item>
                       <el-menu-item index="3">
                         <a href="http://117.50.19.70:32416" target="_blank">MES解决方案</a>
@@ -88,7 +88,6 @@
                   <div class="solution-shade">
                     <p> {{ item.shadeTitle }}</p>
                   </div>
-                  <!-- <img :src="item.imgURL"/> -->
                 </el-carousel-item>
               </el-carousel>
             </div>

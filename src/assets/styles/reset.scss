@@ -1,4 +1,6 @@
 @charset "utf-8";
+// @import './media.scss';
+
 html, body {
   height: 100%;
 }
@@ -145,12 +147,11 @@ a:active {
 
 @media (max-width: 767px) {
   .header-logo {
-    background-color: red;
-
     img {
       width: 6rem !important;
     }
   }
+
   .header-nav,
   .header-tools {
     ul.el-menu {
@@ -163,27 +164,29 @@ a:active {
         background-color: rgba(255, 255, 255, 0) !important;
       }
     }
+
   }
 }
 
 @media (max-width: 991px) {
-  .console-container {
+
+  // nav
+  .nav-container {
     transition: all 0.5s;
-    background-color: #191970 !important;
 
     &:hover {
-      background-color: red !important;
-
-      .header-tools {
-        transform: translateX(-1rem);
+      .header-nav {
+        transform: translateX(0);
       }
+
     }
 
-    .header-tools {
+    .header-nav {
+      // width: 6rem;
       transition: all 0.5s;
       position: absolute;
-      top: 3.5rem;
-      transform: translateX(200%);
+      // top: 3.5rem;
+      transform: translateX(-28.5rem);
       z-index: 1;
 
       .el-menu--horizontal>.el-menu-item {
@@ -191,17 +194,53 @@ a:active {
       }
     }
 
-    .console-icon {
+    .nav-icon {
       display: block !important;
     }
 
   }
+
+  // console
+  // .console-container {
+  //   transition: all 0.5s;
+
+  //   &:hover {
+  //     .header-tools {
+  //       transform: translateX(-1rem);
+  //     }
+  //   }
+
+  //   .header-tools {
+  //     transition: all 0.5s;
+  //     position: absolute;
+  //     top: 3.5rem;
+  //     transform: translateX(200%);
+  //     z-index: 1;
+
+  //     .el-menu--horizontal>.el-menu-item {
+  //       float: none;
+  //     }
+  //   }
+
+  //   .console-icon {
+  //     display: block !important;
+  //   }
+
+  // }
 }
+
 @media (min-width:768px) and (max-width: 991px) {
   .header-logo {
-    background-color: red;
     img {
-      width: 8rem !important;
+      width: 6rem !important;
+    }
+  }
+
+}
+@media (min-width:992px) and (max-width: 1200px) {
+  .header-logo {
+    img {
+      width: 7rem !important;
     }
   }
 

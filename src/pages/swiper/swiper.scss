@@ -43,106 +43,125 @@
                 height: 3.5rem;
 
                 .header-main {
+
+                  // nav and console
                   .header-item {
                     display: flex;
-                    background-color: gold;
+
+                    // header-nav and header-tools
+                    .header-nav,
+                    .header-tools {
+                      ul.el-menu {
+                        height: 3.5rem;
+                        border: 0;
+
+                        li.el-menu-item {
+                          height: 3.5rem;
+                          font-size: 1rem;
+                          font-weight: bolder
+                        }
+
+                        .el-menu-item:hover {
+                          background-color: rgba(255, 255, 255, 0) !important;
+                        }
+
+                      }
+                    }
                   }
 
+                  // logo - container
                   .logo-container {
                     align-items: center;
                     justify-content: flex-end;
 
-                  }
+                    .header-logo {
+                      height: 3.5rem;
+                      float: left;
+                      width: 12.5rem;
+                      line-height: 3.5rem;
 
-                  .console-container {
-                    justify-content: center;
+                      img {
+                        width: 10rem;
+                        height: auto;
+                      }
+
+                      height: 3.5rem;
+                    }
+
+                  }
+                  // nav-container
+                  .nav-container {
+                    // justify-content: center;
                     align-content: center;
-                    .console-icon {
+                    .nav-icon {
                       line-height: 3.5rem;
                     }
                   }
 
-                  .header-logo {
-                    height: 3.5rem;
-                    float: left;
-                    width: 12.5rem;
-                    line-height: 3.5rem;
+                  // console-contaier
+                  .console-container {
+                    justify-content: center;
+                    align-content: center;
 
-                    img {
-                      width: 10rem;
-                      height: auto;
+                    .console-icon {
+                      line-height: 3.5rem;
                     }
 
-                    height: 3.5rem;
-                  }
-
-                  // header-nav and header-tools
-                  .header-nav,
-                  .header-tools {
-                    background-color: khaki;
-                    ul.el-menu {
+                    // header-nav
+                    .header-nav {
+                      float: left;
                       height: 3.5rem;
-                      border: 0;
+                      width: auto;
 
-                      li.el-menu-item {
-                        height: 3.5rem;
-                        font-size: 1rem;
-                        font-weight: bolder
-                      }
-                      .el-menu-item:hover {
-                        background-color: rgba(255, 255, 255, 0) !important;
-                      }
+                      // .el-dropdown-menu__item--divided:before,
+                      // .el-menu,
+                      // .el-menu--horizontal>.el-menu-item:not(.is-disabled):focus,
+                      // .el-menu--horizontal>.el-menu-item:not(.is-disabled):hover,
+                      // .el-menu--horizontal>.el-submenu .el-submenu__title:hover {
+                      //   background-color: red !important;
+                      // }
                     }
-                  }
 
-                  // header-nav
-                  .header-nav {
-                    float: left;
-                    height: 3.5rem;
-                    width: auto;
+                    // header-tools
+                    .header-tools {
+                      width: auto;
+                      justify-content: flex-end;
 
-                    // .el-dropdown-menu__item--divided:before,
-                    // .el-menu,
-                    // .el-menu--horizontal>.el-menu-item:not(.is-disabled):focus,
-                    // .el-menu--horizontal>.el-menu-item:not(.is-disabled):hover,
-                    // .el-menu--horizontal>.el-submenu .el-submenu__title:hover {
-                    //   background-color: red !important;
-                    // }
-                  }
+                      // li.el-menu--horizontal {
+                      //   .el-menu-item {
+                      //     a {
+                      //       border: 1px solid white;
+                      //     }
+                      //   }
+                      // }
 
-                  // header-tools
-                  .header-tools {
-                    width: auto;
-                    justify-content: flex-end;
-                    l.el-menu--horizontal {
-                      .el-menu-item{
-                        a{
-                        border: 1px solid white;
+                      // 去掉elementUI默认的下滑条
+                      ul.el-menu--horizontal>.el-menu-item.is-active {
+                        border: 0;
+                      }
+
+                      ul.el-menu--horizontal>.el-menu-item {
+                        border: 0;
+                      }
+
+                      // 注册按钮style
+                      ul.el-menu--horizontal {
+                        &> :last-child {
+                          a {
+                            display: inline-block;
+                            width: 3rem;
+                            height: 2rem;
+                            line-height: 2rem;
+                            border: 1px solid white;
+                            border-radius: 0.5rem;
+                          }
                         }
                       }
+                      // .el-menu--horizontal>.el-menu-item:hover{
+                      //   background-color: rgba(255,255,255,0) !important;
+                      // }
                     }
-                    // 去掉elementUI默认的下滑条
-                    ul.el-menu--horizontal > .el-menu-item.is-active {
-                      border: 0;
-                    }
-                    ul.el-menu--horizontal > .el-menu-item {
-                      border: 0;
-                    }
-                    ul.el-menu--horizontal {
-                      & > :last-child {
-                        a {
-                          display: inline-block;
-                          width: 3rem;
-                          height: 2rem;
-                          line-height: 2rem;
-                          border: 1px solid white;
-                          border-radius: 0.5rem;
-                        }
-                      }
-                    }
-                    // .el-menu--horizontal>.el-menu-item:hover{
-                    //   background-color: rgba(255,255,255,0) !important;
-                    // }
+
                   }
 
                 }

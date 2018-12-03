@@ -10,7 +10,8 @@ import VueFullPage from 'vue-fullpage'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'vue-fullpage/vue-fullpage.css'
 import 'swiper/dist/css/swiper.css'
-import './assets/styles/reset.scss'
+// import './assets/styles/reset.scss'
+import './assets/styles/index'
 import 'animate.css'
 
 Vue.use(ElementUI)

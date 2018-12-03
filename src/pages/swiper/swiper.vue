@@ -12,12 +12,12 @@
               <article class="header-top">
                 <div class="header-main">
                   <el-row type="flex">
-                    <el-col class="logo-container header-item" :xs="5" :sm="5" :md="4" :lg="4" :xl="4">
+                    <el-col class="logo-container header-item" :xs="6" :sm="7" :md="3" :lg="4" :xl="4">
                         <div class="header-logo">
                           <img :src="logoImage"/>
                         </div>
                     </el-col>
-                    <el-col class="nav-container header-item" :xs="17" :sm="17" :md="12" :lg="12" :xl="12">
+                    <el-col class="nav-container header-item" :xs="2" :sm="2" :md="13" :lg="12" :xl="12">
                         <div class="header-nav">
                           <el-menu
                             :default-active="activeIndex"
@@ -40,9 +40,12 @@
                             </el-submenu> -->
 
                           </el-menu>
-                      </div>
+                        </div>
+                        <div class="nav-icon" style="display:none">
+                          <i class="el-icon-menu"></i>
+                        </div>
                     </el-col>
-                    <el-col class="console-container header-item" :xs="2" :sm="2" :md="8" :lg="8" :xl="8">
+                    <el-col class="console-container header-item" :xs="16" :sm="16" :md="8" :lg="8" :xl="8">
                         <div class="header-tools">
                           <el-menu
                             class="el-menu-demo"
@@ -57,11 +60,6 @@
                               <a :href="item.url" target="_blank">{{ item.name }}</a>
                             </el-menu-item>
                           </el-menu>
-                        </div>
-                        <div class="console-icon" style="display:none">
-                          <i class="el-icon-menu"></i>
-                          <!-- <el-button  icon="el-icon-menu"> -->
-                          <!-- </el-button> -->
                         </div>
                     </el-col>
                   </el-row>

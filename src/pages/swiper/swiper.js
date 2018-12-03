@@ -23,6 +23,72 @@ export default {
       bgImage,
       logoImage,
       activeIndex: '1',
+      navList: [
+        {
+          index: 1,
+          value: 'revolution-iot',
+          name: 'IOT解决方案',
+          url: 'http://58.56.27.130:6705',
+          childrenItem: [
+            {
+              index: 1 - 1,
+              value: 'iot',
+              name: 'one',
+              url: '#'
+            },
+            {
+              index: 1 - 2,
+              value: 'iot',
+              name: 'two',
+              url: '#'
+            }
+          ]
+        },
+        {
+          index: 2,
+          value: 'revolution-erp',
+          name: 'ERP解决方案',
+          url: 'http://117.50.19.70:31982'
+        },
+        {
+          index: 3,
+          value: 'revolution-mes',
+          name: 'MES解决方案',
+          url: 'http://117.50.19.70:32416'
+        },
+        {
+          index: 4,
+          value: 'revolution-bigData',
+          name: '大数据解决方案',
+          url: 'http://117.50.19.70:32651/#/notebook/2DTJZT5Y7'
+        }
+      ],
+      navConsole: [
+        {
+          index: 1,
+          value: 'console',
+          name: '控制台',
+          url: 'https://106.75.120.241'
+        },
+        {
+          index: 2,
+          value: 'docs',
+          name: '文档中心',
+          url: '#'
+        },
+        {
+          index: 3,
+          value: 'login-in',
+          name: '登录',
+          url: '#'
+        },
+        {
+          index: 3,
+          value: 'login-up',
+          name: '注册',
+          url: '#'
+        }
+      ],
       swiperOption: {
         // autoplay: 1000,
         // autoplay: true, // 可选选项，自动滑动

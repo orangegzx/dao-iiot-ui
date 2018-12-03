@@ -113,7 +113,7 @@ html {
 body {
   font-family: Arial, "Microsoft Yahei", "Helvetica Neue", Helvetica, sans-serif;
   color: #333;
-  line-height: 1;
+  // line-height: 1;
   -webkit-text-size-adjust: none;
 }
 
@@ -136,6 +136,75 @@ a:hover {
 a:active {
 }
 
+// element- nav
+.el-menu {
+  .el-menu-item {
+    padding: 0 1rem !important;
+  }
+}
 
+@media (max-width: 767px) {
+  .header-logo {
+    background-color: red;
+
+    img {
+      width: 6rem !important;
+    }
+  }
+  .header-nav,
+  .header-tools {
+    ul.el-menu {
+      li.el-menu-item {
+        font-size: 0.65rem !important;
+        font-weight: bolder
+      }
+
+      .el-menu-item:hover {
+        background-color: rgba(255, 255, 255, 0) !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .console-container {
+    transition: all 0.5s;
+    background-color: #191970 !important;
+
+    &:hover {
+      background-color: red !important;
+
+      .header-tools {
+        transform: translateX(-1rem);
+      }
+    }
+
+    .header-tools {
+      transition: all 0.5s;
+      position: absolute;
+      top: 3.5rem;
+      transform: translateX(200%);
+      z-index: 1;
+
+      .el-menu--horizontal>.el-menu-item {
+        float: none;
+      }
+    }
+
+    .console-icon {
+      display: block !important;
+    }
+
+  }
+}
+@media (min-width:768px) and (max-width: 991px) {
+  .header-logo {
+    background-color: red;
+    img {
+      width: 8rem !important;
+    }
+  }
+
+}
 
 

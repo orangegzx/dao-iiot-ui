@@ -11,10 +11,65 @@
             <el-header class="header">
               <article class="header-top">
                 <div class="header-main">
-                  <div class="header-logo">
+                  <el-row type="flex">
+                    <el-col class="logo-container header-item" :xs="5" :sm="5" :md="4" :lg="4" :xl="4">
+                        <div class="header-logo">
+                          <img :src="logoImage"/>
+                        </div>
+                    </el-col>
+                    <el-col class="nav-container header-item" :xs="17" :sm="17" :md="12" :lg="12" :xl="12">
+                        <div class="header-nav">
+                          <el-menu
+                            :default-active="activeIndex"
+                            class="el-menu-demo"
+                            background-color="rgba(0,0,0,0.7)"
+                            text-color="#fff"
+                            active-text-color="#ffd04b"
+                            mode="horizontal">
+                            <el-menu-item
+                              v-for="item in navList"
+                              :key="item.value"
+                              :index="item.index">
+                              <a :href="item.url" target="_blank">
+                                {{ item.name }}
+                              </a>
+                            </el-menu-item>
+                            <!-- <el-submenu index="2">
+                              <template slot="title">我的工作台</template>
+                              <el-menu-item index="2-1">选项1</el-menu-item>
+                            </el-submenu> -->
+
+                          </el-menu>
+                      </div>
+                    </el-col>
+                    <el-col class="console-container header-item" :xs="2" :sm="2" :md="8" :lg="8" :xl="8">
+                        <div class="header-tools">
+                          <el-menu
+                            class="el-menu-demo"
+                            background-color="rgba(0,0,0,0.7)"
+                            text-color="#fff"
+                            active-text-color="#fafafa"
+                            mode="horizontal">
+                            <el-menu-item
+                              v-for="item in navConsole"
+                              :key="item.value"
+                              :index="item.index">
+                              <a :href="item.url" target="_blank">{{ item.name }}</a>
+                            </el-menu-item>
+                          </el-menu>
+                        </div>
+                        <div class="console-icon" style="display:none">
+                          <i class="el-icon-menu"></i>
+                          <!-- <el-button  icon="el-icon-menu"> -->
+                          <!-- </el-button> -->
+                        </div>
+                    </el-col>
+                  </el-row>
+                  <!-- <div class="header-logo">
                     <img :src="logoImage"/>
-                  </div>
-                  <div class="header-nav">
+                  </div> -->
+                  <!-- navList -->
+                  <!-- <div class="header-nav">
                     <el-menu
                       :default-active="activeIndex"
                       class="el-menu-demo"
@@ -22,41 +77,37 @@
                       text-color="#fff"
                       active-text-color="#ffd04b"
                       mode="horizontal">
-                      <el-menu-item index="1">
-                        <a href="http://58.56.27.130:6705" target="_blank">IOT解决方案</a>
-                      </el-menu-item>
-                      <el-menu-item index="2">
-                        <a href="http://117.50.19.70:31982" target="_blank">ERP解决方案</a>
-                      </el-menu-item>
-                      <el-menu-item index="3">
-                        <a href="http://117.50.19.70:32416" target="_blank">MES解决方案</a>
-                      </el-menu-item>
-                      <el-menu-item index="4">
-                        <a href="http://117.50.19.70:32651/#/notebook/2DTJZT5Y7" target="_blank">大数据解决方案</a>
+                      <el-menu-item
+                        v-for="item in navList"
+                        :key="item.value"
+                        :index="item.index">
+                        <a :href="item.url" target="_blank">
+                          {{ item.name }}
+                        </a>
                       </el-menu-item>
                     </el-menu>
-                  </div>
-                  <div class="header-tools">
+                  </div> -->
+
+                  <!-- console -->
+                  <!-- <div class="header-tools">
                     <el-menu
                       class="el-menu-demo"
                       background-color="rgba(0,0,0,0.7)"
                       text-color="#fff"
                       active-text-color="#fafafa"
                       mode="horizontal">
-                      <el-menu-item index="1">
-                        <a href="https://106.75.120.241" target="_blank">控制台</a>
-                      </el-menu-item>
-                      <el-menu-item index="2" >
-                        <a href="#" target="_blank">登录</a>
-                      </el-menu-item>
-                      <el-menu-item index="3">
-                        <a href="#" target="_blank">注册</a>
+                      <el-menu-item
+                        v-for="item in navConsole"
+                        :key="item.value"
+                        :index="item.index">
+                        <a :href="item.url" target="_blank">{{ item.name }}</a>
                       </el-menu-item>
                     </el-menu>
-                  </div>
+                  </div> -->
                 </div>
               </article>
             </el-header>
+
           <!-- content -->
             <el-main class="content">
               <div class="content-container">
@@ -91,7 +142,7 @@
                 </el-carousel-item>
               </el-carousel>
             </div>
-          </div>3
+          </div>
         </div>
       </swiper-slide>
 

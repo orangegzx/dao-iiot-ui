@@ -12,12 +12,12 @@
               <article class="header-top">
                 <div class="header-main">
                   <el-row type="flex">
-                    <el-col class="logo-container header-item" :xs="6" :sm="7" :md="3" :lg="4" :xl="4">
+                    <el-col class="logo-container header-item" :xs="8" :sm="8" :md="3" :lg="4" :xl="5">
                         <div class="header-logo">
                           <img :src="logoImage"/>
                         </div>
                     </el-col>
-                    <el-col class="nav-container header-item" :xs="2" :sm="2" :md="13" :lg="12" :xl="12">
+                    <el-col class="nav-container header-item" :xs="2" :sm="2" :md="15" :lg="14" :xl="12">
                         <div class="header-nav">
                           <el-menu
                             :default-active="activeIndex"
@@ -45,7 +45,7 @@
                           <i class="el-icon-menu"></i>
                         </div>
                     </el-col>
-                    <el-col class="console-container header-item" :xs="16" :sm="16" :md="8" :lg="8" :xl="8">
+                    <el-col class="console-container header-item" :xs="14" :sm="14" :md="6" :lg="6" :xl="7">
                         <div class="header-tools">
                           <el-menu
                             class="el-menu-demo"
@@ -119,29 +119,9 @@
       </swiper-slide>
 
       <!-- second page-->
-      <swiper-slide class="swiper-slide2">
-        <div class="solution">
-          <div class="solution-container">
-            <div class="solution-title">
-              <div class="solution-title-container">
-              <p>行业解决方案</p>
-              <p>Daoloud多样化的工业互联网解决方案</p>
-            </div>
-            </div>
-            <div class="solution-introduce">
-              <el-carousel trigger="click" type="card" height= "80%" @change="shadeSlide" >
-                <el-carousel-item
-                  v-for="item in solutionsItems"
-                  :key="item.name"
-                  :style="{'background-image':`url('${item.imgURL}')`}">
-                  <div class="solution-shade">
-                    <p> {{ item.shadeTitle }}</p>
-                  </div>
-                </el-carousel-item>
-              </el-carousel>
-            </div>
-          </div>
-        </div>
+      <swiper-slide
+        class="swiper-slide2">
+        <module-solution :solutionsItems="solutionsItems"></module-solution>
       </swiper-slide>
 
       <swiper-slide class="swiper-footer">

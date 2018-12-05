@@ -8,14 +8,13 @@ import logoImage from '@/assets/images/daocloud.png'
 import soluImage1 from '@/assets/images/case-bg-dongfeng.jpg'
 import soluImage2 from '@/assets/images/case-bg-opg.jpg'
 import soluImage3 from '@/assets/images/saic-bg.jpg'
+import ModuleSolution from '@/components/solution/ModuleSolution.vue'
 
 export default {
   components: {
     swiper,
     swiperSlide,
-    soluImage1,
-    soluImage2,
-    soluImage3
+    ModuleSolution
   },
   name: 'carrousel',
   data () {
@@ -61,6 +60,12 @@ export default {
           value: 'revolution-bigData',
           name: '大数据解决方案',
           url: 'http://117.50.19.70:32651/#/notebook/2DTJZT5Y7'
+        },
+        {
+          index: 5,
+          value: 'revolution-docs',
+          name: '文档中心',
+          url: '#'
         }
       ],
       navConsole: [
@@ -72,12 +77,6 @@ export default {
         },
         {
           index: 2,
-          value: 'docs',
-          name: '文档中心',
-          url: '#'
-        },
-        {
-          index: 3,
           value: 'login-in',
           name: '登录',
           url: '#'

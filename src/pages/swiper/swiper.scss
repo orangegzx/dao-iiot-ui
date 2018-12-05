@@ -112,28 +112,12 @@
                       float: left;
                       height: 3.5rem;
                       width: auto;
-
-                      // .el-dropdown-menu__item--divided:before,
-                      // .el-menu,
-                      // .el-menu--horizontal>.el-menu-item:not(.is-disabled):focus,
-                      // .el-menu--horizontal>.el-menu-item:not(.is-disabled):hover,
-                      // .el-menu--horizontal>.el-submenu .el-submenu__title:hover {
-                      //   background-color: red !important;
-                      // }
                     }
 
                     // header-tools
                     .header-tools {
                       width: auto;
                       justify-content: flex-end;
-
-                      // li.el-menu--horizontal {
-                      //   .el-menu-item {
-                      //     a {
-                      //       border: 1px solid white;
-                      //     }
-                      //   }
-                      // }
 
                       // 去掉elementUI默认的下滑条
                       ul.el-menu--horizontal>.el-menu-item.is-active {
@@ -157,9 +141,7 @@
                           }
                         }
                       }
-                      // .el-menu--horizontal>.el-menu-item:hover{
-                      //   background-color: rgba(255,255,255,0) !important;
-                      // }
+
                     }
 
                   }
@@ -177,20 +159,17 @@
             height: 100%;
 
             .content-container {
-              width: 75rem;
+              width: 100%;
               height: 100%;
-              display: inline-block;
-              position: relative;
+              display: flex;
+              justify-content: center;
+              align-items: center;
 
               .content-title {
                 height: 10rem;
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                margin: auto;
-                line-height: 10rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 span {
                   display: inline-block;
                   font-size: 7.5em;
@@ -202,100 +181,11 @@
         }
       }
 
-      // solution
+      // // solution
       .swiper-slide2 {
         background-color: #fafafa;
         width: 100%;
         height: 100%;
-
-        .solution {
-          height: 100%;
-
-          .solution-container {
-            width: 75rem;
-            height: 100%;
-            display: inline-block;
-
-            .solution-title {
-              height: 12rem;
-              position: relative;
-              .solution-title-container{
-                width: 100%;
-                height: 3rem;
-                position: absolute;
-                top: 0;bottom:0;
-                left: 0; right: 0;
-                margin: auto;
-                & > :nth-child(1){
-                  font-size: 3rem;
-                }
-                & > :nth-child(2){
-                  font-size: 1.15em;
-                  margin-top: 0.8em;
-                }
-              }
-
-            }
-
-            .solution-introduce {
-              width: 100%;
-              height: calc(100% - 12rem);
-              margin: 2rem 0;
-
-              .el-carousel{
-                width: 100%;
-                height: 100%;
-
-                .el-carousel__container{
-                  position: relative;
-                  .el-carousel__item{
-                    background-color: #fafafa; /* 图片加载过程中显示背景色*/
-                    background-position: center center; /* 背景图垂直水平居中*/
-                    background-repeat: no-repeat;
-                    background-size: 200%; /* 基于容器大小伸缩*/
-                    transition: all 0.5s ease-in-out;
-
-                    & >:hover{
-                      background-color: rgba(0, 0, 0, 0.3);
-                      transform: scale(1.2)
-                    }
-                    &:hover{
-                      background-size: 67rem;
-                    }
-
-                    // img{
-                    //   transition: all 0.5s;
-                    // }
-                    .solution-shade {
-                      width: 100%;
-                      height: 100%;
-                      color: #fafafa;
-                      position: relative;
-                      transition: all 0.5s;
-
-                      // &:hover {
-                      //   background-color: rgba(0, 0, 0, 0.2);
-                      //   transform: scale(1.5);
-                      // }
-                      p{
-                        height: 2em;
-                        line-height: 2em;
-                        font-size: 3em;
-                        display: inline-block;
-                        position: absolute;
-                        top: 0; bottom: 0;
-                        left: 0; right: 0;
-                        margin: auto;
-                      }
-
-                    }
-                  }
-                }
-              }
-
-            }
-          }
-        }
       }
 
       // footer

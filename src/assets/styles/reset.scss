@@ -144,11 +144,25 @@ a:active {
     padding: 0 1rem !important;
   }
 }
+// 解决方案中的ul
+.solution-content-container {
+  .el-carousel {
+    .el-carousel__indicators {
+      display: none !important;
+    }
+  }
+}
+
 
 @media (max-width: 767px) {
   .header-logo {
     img {
       width: 6rem !important;
+    }
+  }
+  .content-title {
+    span {
+      font-size: 4rem !important;
     }
   }
 
@@ -169,6 +183,11 @@ a:active {
 }
 
 @media (max-width: 991px) {
+  .content-title {
+    span {
+      font-size: 5.5rem !important;
+    }
+  }
 
   // nav
   .nav-container {
@@ -176,7 +195,7 @@ a:active {
 
     &:hover {
       .header-nav {
-        transform: translateX(0);
+        transform: translateY(100%) translateX(-50%);
       }
 
     }
@@ -185,8 +204,7 @@ a:active {
       // width: 6rem;
       transition: all 0.5s;
       position: absolute;
-      // top: 3.5rem;
-      transform: translateX(-28.5rem);
+      transform: translateY(-2rem) translateX(-50%);
       z-index: 1;
 
       .el-menu--horizontal>.el-menu-item {
@@ -199,34 +217,6 @@ a:active {
     }
 
   }
-
-  // console
-  // .console-container {
-  //   transition: all 0.5s;
-
-  //   &:hover {
-  //     .header-tools {
-  //       transform: translateX(-1rem);
-  //     }
-  //   }
-
-  //   .header-tools {
-  //     transition: all 0.5s;
-  //     position: absolute;
-  //     top: 3.5rem;
-  //     transform: translateX(200%);
-  //     z-index: 1;
-
-  //     .el-menu--horizontal>.el-menu-item {
-  //       float: none;
-  //     }
-  //   }
-
-  //   .console-icon {
-  //     display: block !important;
-  //   }
-
-  // }
 }
 
 @media (min-width:768px) and (max-width: 991px) {
@@ -236,11 +226,23 @@ a:active {
     }
   }
 
+  .content-title {
+    span {
+      font-size: 5rem !important;
+    }
+  }
+
 }
 @media (min-width:992px) and (max-width: 1200px) {
   .header-logo {
     img {
       width: 7rem !important;
+    }
+  }
+
+  .content-title {
+    span {
+      font-size: 5.5rem !important;
     }
   }
 

@@ -5,8 +5,13 @@
       <swiper-slide
         :style="{ 'background-image': `url('${ bgImage}')`}"
         class="swiper-slide1">
-        <div class="first">
-          <!-- header -->
+        <module-header
+          :navList="navList"
+          :navConsole="navConsole"
+          :logoImage="logoImage">
+        </module-header>
+
+        <!-- <div class="first">
           <el-container>
             <el-header class="header">
               <article class="header-top">
@@ -34,10 +39,10 @@
                                 {{ item.name }}
                               </a>
                             </el-menu-item>
-                            <!-- <el-submenu index="2">
+                            <el-submenu index="2">
                               <template slot="title">我的工作台</template>
                               <el-menu-item index="2-1">选项1</el-menu-item>
-                            </el-submenu> -->
+                            </el-submenu>
 
                           </el-menu>
                         </div>
@@ -45,7 +50,7 @@
                           <i class="el-icon-menu"></i>
                         </div>
                     </el-col>
-                    <el-col class="console-container header-item" :xs="14" :sm="14" :md="6" :lg="6" :xl="7">
+                    <el-col class="console-container header-item" :xs="14" :sm="14" :md="6" :lg="6" :xl="5">
                         <div class="header-tools">
                           <el-menu
                             class="el-menu-demo"
@@ -63,11 +68,10 @@
                         </div>
                     </el-col>
                   </el-row>
-                  <!-- <div class="header-logo">
+                     <div class="header-logo">
                     <img :src="logoImage"/>
-                  </div> -->
-                  <!-- navList -->
-                  <!-- <div class="header-nav">
+                  </div>
+                <div class="header-nav">
                     <el-menu
                       :default-active="activeIndex"
                       class="el-menu-demo"
@@ -84,10 +88,8 @@
                         </a>
                       </el-menu-item>
                     </el-menu>
-                  </div> -->
-
-                  <!-- console -->
-                  <!-- <div class="header-tools">
+                  </div>
+                  <div class="header-tools">
                     <el-menu
                       class="el-menu-demo"
                       background-color="rgba(0,0,0,0.7)"
@@ -101,12 +103,12 @@
                         <a :href="item.url" target="_blank">{{ item.name }}</a>
                       </el-menu-item>
                     </el-menu>
-                  </div> -->
+                  </div>
                 </div>
               </article>
-            </el-header>
+            </el-header> -->
 
-          <!-- content -->
+          <!-- content
             <el-main class="content">
               <div class="content-container">
                 <div class="content-title">
@@ -115,15 +117,16 @@
               </div>
             </el-main>
           </el-container>
-        </div>
+        </div> -->
       </swiper-slide>
 
       <!-- second page-->
       <swiper-slide
         class="swiper-slide2">
-        <module-solution :solutionsItems="solutionsItems"></module-solution>
+        <module-solution :solutionsItems="solutionsLists"></module-solution>
       </swiper-slide>
 
+      <!-- footer -->
       <swiper-slide class="swiper-footer">
         <el-container>
           <el-main>Main</el-main>

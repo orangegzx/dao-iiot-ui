@@ -9,11 +9,13 @@ import soluImage1 from '@/assets/images/case-bg-dongfeng.jpg'
 import soluImage2 from '@/assets/images/case-bg-opg.jpg'
 import soluImage3 from '@/assets/images/saic-bg.jpg'
 import ModuleSolution from '@/components/solution/ModuleSolution.vue'
+import ModuleHeader from '@/components/header/ModuleHeader.vue'
 
 export default {
   components: {
     swiper,
     swiperSlide,
+    ModuleHeader,
     ModuleSolution
   },
   name: 'carrousel',
@@ -24,7 +26,7 @@ export default {
       activeIndex: '1',
       navList: [
         {
-          index: 1,
+          index: '1',
           value: 'revolution-iot',
           name: 'IOT解决方案',
           url: 'http://58.56.27.130:6705',
@@ -44,25 +46,25 @@ export default {
           ]
         },
         {
-          index: 2,
+          index: '2',
           value: 'revolution-erp',
           name: 'ERP解决方案',
           url: 'http://117.50.19.70:31982'
         },
         {
-          index: 3,
+          index: '3',
           value: 'revolution-mes',
           name: 'MES解决方案',
           url: 'http://117.50.19.70:32416'
         },
         {
-          index: 4,
+          index: '4',
           value: 'revolution-bigData',
           name: '大数据解决方案',
           url: 'http://117.50.19.70:32651/#/notebook/2DTJZT5Y7'
         },
         {
-          index: 5,
+          index: '5',
           value: 'revolution-docs',
           name: '文档中心',
           url: '#'
@@ -70,24 +72,25 @@ export default {
       ],
       navConsole: [
         {
-          index: 1,
+          index: '1',
           value: 'console',
           name: '控制台',
           url: 'https://106.75.120.241'
         },
         {
-          index: 2,
+          index: '2',
           value: 'login-in',
           name: '登录',
           url: '#'
         },
         {
-          index: 3,
+          index: '3',
           value: 'login-up',
           name: '注册',
           url: '#'
         }
       ],
+      // swiper-slides
       swiperOption: {
         // autoplay: 1000,
         // autoplay: true, // 可选选项，自动滑动
@@ -130,22 +133,7 @@ export default {
         setWrapperSize: true
         // zoom: true // 焦距功能，双击slide放大/缩小。手机端可以双指触摸播放 需要结合swiper-zoom-container使用
       },
-      solutionsItems: [{
-        name: 'first',
-        imgURL: soluImage1,
-        shadeTitle: 'title',
-        shadeContent: 'text text text text'
-      }, {
-        name: 'second',
-        imgURL: soluImage2,
-        shadeTitle: 'title',
-        shadeContent: 'text text text text'
-      }, {
-        name: 'three',
-        imgURL: soluImage3,
-        shadeTitle: 'title',
-        shadeContent: 'text text text text'
-      }],
+      // swiper-slides
       swiperSlides: [{
         id: 1,
         name: 'swiper-slide',
@@ -166,6 +154,23 @@ export default {
         id: 5,
         name: 'swiper-slide',
         class: 'swiper-slide5'
+      }],
+      // swiper2 - solutions
+      solutionsLists: [{
+        name: 'first',
+        imgURL: soluImage1,
+        shadeTitle: 'title',
+        shadeContent: 'text text text text'
+      }, {
+        name: 'second',
+        imgURL: soluImage2,
+        shadeTitle: 'title',
+        shadeContent: 'text text text text'
+      }, {
+        name: 'three',
+        imgURL: soluImage3,
+        shadeTitle: 'title',
+        shadeContent: 'text text text text'
       }]
     }
   },

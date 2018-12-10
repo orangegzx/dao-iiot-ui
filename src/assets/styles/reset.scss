@@ -154,6 +154,8 @@ a:active {
 }
 
 
+// media
+// width<= 767px
 @media (max-width: 767px) {
   .header-logo {
     img {
@@ -162,7 +164,7 @@ a:active {
   }
   .content-title {
     span {
-      font-size: 4rem !important;
+      font-size: 3rem !important;
     }
   }
 
@@ -182,10 +184,11 @@ a:active {
   }
 }
 
+// width<= 991px
 @media (max-width: 991px) {
   .content-title {
     span {
-      font-size: 5.5rem !important;
+      font-size: 4rem !important;
     }
   }
 
@@ -204,7 +207,7 @@ a:active {
       // width: 6rem;
       transition: all 0.5s;
       position: absolute;
-      transform: translateY(-2rem) translateX(-50%);
+      transform: translateY(-20rem) translateX(-50%);
       z-index: 1;
 
       .el-menu--horizontal>.el-menu-item {
@@ -219,6 +222,7 @@ a:active {
   }
 }
 
+//768px<= width<= 991px
 @media (min-width:768px) and (max-width: 991px) {
   .header-logo {
     img {
@@ -233,6 +237,7 @@ a:active {
   }
 
 }
+//992px<= width<= 1200px
 @media (min-width:992px) and (max-width: 1200px) {
   .header-logo {
     img {

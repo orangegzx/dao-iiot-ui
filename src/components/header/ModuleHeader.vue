@@ -38,7 +38,7 @@
                         </div>
                     </el-col>
 
-                    <el-col class="console-container header-item" :xs="14" :sm="14" :md="6" :lg="6" :xl="5">
+                    <el-col class="console-container header-item" :xs="14" :sm="14" :md="6" :lg="6" :xl="7">
                         <div class="header-tools">
                           <el-menu
                             class="el-menu-demo"

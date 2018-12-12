@@ -61,7 +61,7 @@ export default {
           index: '4',
           value: 'revolution-bigData',
           name: '大数据解决方案',
-          url: 'http://117.50.19.70:32651/#/notebook/2DTJZT5Y7'
+          url: 'http://192.168.2.221:31180'
         },
         {
           index: '5',
